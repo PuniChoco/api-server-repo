@@ -1,0 +1,93 @@
+
+GET http://localhost:3000/api/members/5
+
+###
+GET http://localhost:3000/api/members/
+
+###
+
+POST http://localhost:3000/api/members
+Content-Type: application/json
+
+[
+  {
+  "name":"Alex",
+  "team":"engineering",
+  "position":"Server Developer",
+  "emailAddress":"alex@google.com",
+  "phoneNumber":"010-xxxx-xxxx",
+  "admissionDate":"2018-12-10T00:00:00.000Z",
+  "birthday":"1994-11-08T00:00:00.000Z",
+  "profileImage":"profile1.png"
+  },
+
+  {
+    "name":"Benjamin",
+    "team":"engineering",
+    "position":"Server Developer",
+    "emailAddress":"benjamin@google.com",
+    "phoneNumber":"010-xxxx-xxxx",
+    "admissionDate":"2021-01-20T00:00:00.000Z",
+    "birthday":"1992-03-26T00:00:00.000Z",
+    "profileImage":"profile2.png"
+  },
+
+  {
+    "name":"Charles",
+    "team":"engineering",
+    "position":"Android Developer",
+    "emailAddress":"charles@google.com",
+    "phoneNumber":"010-xxxx-xxxx",
+    "admissionDate":"2018-10-09T00:00:00.000Z",
+    "birthday":"1994-09-08T00:00:00.000Z",
+    "profileImage":"profile3.png"
+  },
+  
+  {
+    "name":"Eric",
+    "team":"engineering",
+    "position":"Web Frontend Developer",
+    "emailAddress":"eric@google.com",
+    "phoneNumber":"010-xxxx-xxxx",
+    "admissionDate":"2020-04-07T00:00:00.000Z",
+    "birthday":"1995-04-10T00:00:00.000Z",
+    "profileImage":"profile4.png"
+  },
+  
+  {
+    "name":"Puni",
+    "team":"cat",
+    "position":"hunting",
+    "emailAddress":"puni@google.com",
+    "phoneNumber":"010-xxxx-xxxx",
+    "admissionDate":"2020-04-07T00:00:00.000Z",
+    "birthday":"1995-04-10T00:00:00.000Z",
+    "profileImage":"profile4.png"
+  },
+  
+  {
+    "name":"choco",
+    "team":"cat",
+    "position":"hunting",
+    "emailAddress":"choco@google.com",
+    "phoneNumber":"010-xxxx-xxxx",
+    "admissionDate":"2020-04-07T00:00:00.000Z",
+    "birthday":"1995-04-10T00:00:00.000Z",
+    "profileImage":"profile4.png"
+  }
+  
+]
+
+###
+PUT http://localhost:3000/api/members/20
+Content-Type: application/json
+
+{ 
+  "name" : "개똥이",
+  "team" : "똥퍼"
+}
+###
+DELETE http://localhost:3000/api/members/45
+
+###
+DELETE http://localhost:3000/api/members?team=marketing
