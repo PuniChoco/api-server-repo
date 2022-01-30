@@ -66,7 +66,7 @@ app.put('/api/members/:id', async(req, res) => {
     // res.send(member);
 
 app.get('/', (req,res) => {
-  res.send('Welcome to Korea')
+  res.send('Welcome to HellKo')
   // send가 JSON 문자열을 변환시켜준다
 })
 
