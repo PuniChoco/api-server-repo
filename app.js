@@ -70,7 +70,6 @@ app.get('/', (req,res) => {
   // send가 JSON 문자열을 변환시켜준다
 })
 
-
 app.get('/api/members/:id', async (req,res) => {
   // :id는 route parameter 변화하는 값을 가져올 수 있게 한다
   const { id } = req.params
@@ -125,7 +124,7 @@ app.delete('/api/members/', async (req, res) => {
   console.log(' team '+ team + team.length)
   let deleteCount = 0
   const member = await Member.findAll({where : {team}});
-  const result = await Member.destroy({where : {}}); // 삭제한 개체의 갯수가 result에 리턴됨
+  // const result = await Member.destroy({where : {}}); // 삭제한 개체의 갯수가 result에 리턴됨
   console.log(' result '+ result)
   if(team){
     await console.log('member '+ member +' team '+ team)  

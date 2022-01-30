@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const env = process.env.NODE_ENV || 'development' // 환경변수가 없으면 개발용으로 
 const config = require('../config/config')[env]
-console.log(' env '+ env)
+console.log('env '+ env)
 const { username, password, database, host, dialect,
 }= config // 대신 환경변수를 받아온다
 
